@@ -1,0 +1,33 @@
+/* Create four equal columns */
+.restuarant_card {
+  flex: 20% 1;
+  padding: 15px;
+  background: #0d0d0d0a;
+  margin: 15px 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.restro_name {
+  display: flex;
+  justify-content: space-between;
+}
+.restuarant_card img {
+  width: 100%;
+}
+.rating {
+  background: #05a56a;
+  margin-top: 16px;
+  border-radius: 5px;
+  color: #fff;
+  width: 50px;
+  padding-left: 10px;
+}
+.restuarant_card:hover {
+  border: 3px solid #8981813b;
+}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .restuarant_card {
+    flex: 50%;
+  }
+}
