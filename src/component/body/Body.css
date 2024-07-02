@@ -3,10 +3,38 @@
 }
 .search_bar {
   text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 3px solid #d4cfcf;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.search_bar input {
+  font-size: 1.15rem;
+  line-height: 24px;
+  width: 90%;
+  height: 100%;
+  outline: 0;
+  border: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: inherit;
+  color: inherit;
+  background: inherit;
+  vertical-align: middle;
+  font-weight: 500;
 }
 .restuarant_container {
   display: flex;
   flex-wrap: wrap;
+}
+.filter_btn {
+  border: 2px solid #296ec0;
+  background-color: #296ec0;
+  padding: 5px;
+  border-radius: 15px;
+  color: #fff;
+  font-weight: 600;
 }
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {

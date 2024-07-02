@@ -11,12 +11,23 @@
   display: flex;
   justify-content: space-between;
 }
+.restro_name h3 {
+  width: 225px;
+}
 .restuarant_card img {
   width: 100%;
+  height: 200px;
+}
+.restuarant_card .cuisines {
+  white-space: nowrap;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .rating {
+  height: 25px;
   background: #05a56a;
-  margin-top: 16px;
+  margin-top: 5px;
   border-radius: 5px;
   color: #fff;
   width: 50px;
@@ -24,6 +35,19 @@
 }
 .restuarant_card:hover {
   border: 3px solid #8981813b;
+}
+.restuarant_card .location {
+  position: relative;
+  margin-top: 10px;
+}
+.restuarant_card .location img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+}
+
+.restuarant_card .location span {
+  padding-left: 30px;
 }
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {

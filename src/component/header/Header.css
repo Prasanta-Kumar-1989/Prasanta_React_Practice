@@ -11,7 +11,9 @@
 .logo {
   height: 115px;
 }
-
+.cartlogo {
+  width: 70px;
+}
 .nav-list {
   list-style-type: none;
   display: flex;
@@ -24,10 +26,6 @@
   margin-right: 10px;
 }
 
-.nav-item.text {
-  line-height: 70px;
-}
-
 .nav-item a {
   color: #fff;
   text-decoration: none;
@@ -37,7 +35,13 @@
 .nav-item a:hover {
   background-color: #555;
 }
-
+.login button {
+  color: #0df9f9;
+  font-weight: 600;
+  background-color: transparent;
+  width: 100px;
+  border: none;
+}
 @media screen and (max-width: 600px) {
   .header {
     display: block;
