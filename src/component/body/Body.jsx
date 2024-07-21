@@ -34,7 +34,12 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <div>
+      <div
+        style={{
+          textAlign: "center",
+          margin: "10px 0px",
+        }}
+      >
         <button
           className="filter_btn"
           onClick={() => {

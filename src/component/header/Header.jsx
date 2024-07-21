@@ -4,6 +4,7 @@ import React from "react";
 import "../header/Header.css";
 import { LOGO_URL } from "../../utils/constant";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [btnName, setBtnName] = useState("Login");
   return (
@@ -12,14 +13,14 @@ const Header = () => {
       <nav className="navbar">
         <ul className="nav-list">
           <li className="nav-item text">
-            <a href="https://example.com">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="nav-item text">
-            <a href="https://example.com">About</a>
+            <Link to="/about">About</Link>
           </li>
 
           <li className="nav-item text">
-            <a href="https://example.com">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li className="nav-item">
             <a href="https://example.com">Cart</a>
